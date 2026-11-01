@@ -1,0 +1,19 @@
+Target List (Row) / Coverage Over Col %,https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts,https://raw.githubusercontent.com/StevenBlack/hosts/master/extensions/fakenews/hosts,https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.plus.txt,https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/spam-tlds-adblock.txt,https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/gambling.txt,https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/adblock/hoster.txt,https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/tif.txt,https://big.oisd.nl,https://adguardteam.github.io/HostlistsRegistry/assets/filter_50.txt,https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/malware,https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/easylist,https://v.firebog.net/hosts/Prigent-Crypto.txt,https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt,https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt,https://raw.githubusercontent.com/blocklistproject/Lists/master/crypto.txt,https://adguardteam.github.io/HostlistsRegistry/assets/filter_7.txt,https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt,https://adaway.org/hosts.txt
+https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts,100%,0%,6%,7%,0%,1%,1%,9%,2%,3%,3%,0%,2%,64%,2%,21%,64%,100%
+https://raw.githubusercontent.com/StevenBlack/hosts/master/extensions/fakenews/hosts,0%,100%,0%,0%,0%,0%,0%,0%,0%,0%,0%,0%,0%,0%,0%,0%,0%,0%
+https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.plus.txt,18%,2%,100%,20%,0%,89%,4%,37%,94%,1%,33%,2%,10%,69%,5%,40%,69%,28%
+https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/spam-tlds-adblock.txt,0%,0%,0%,100%,0%,0%,0%,0%,0%,0%,0%,0%,0%,0%,0%,1%,0%,0%
+https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/gambling.txt,0%,0%,0%,13%,100%,0%,6%,1%,0%,0%,0%,0%,0%,0%,0%,1%,0%,0%
+https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/adblock/hoster.txt,0%,0%,0%,20%,0%,100%,0%,0%,0%,0%,0%,0%,0%,0%,0%,1%,0%,0%
+https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/tif.txt,19%,40%,32%,20%,18%,82%,100%,59%,80%,15%,13%,13%,0%,4%,4%,1%,4%,1%
+https://big.oisd.nl,28%,0%,38%,7%,0%,3%,7%,100%,30%,12%,25%,2%,1%,68%,3%,39%,68%,35%
+https://adguardteam.github.io/HostlistsRegistry/assets/filter_50.txt,0%,0%,1%,13%,0%,1%,0%,0%,100%,0%,0%,0%,0%,0%,0%,1%,0%,0%
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/malware,22%,0%,4%,13%,0%,2%,5%,34%,2%,100%,0%,1%,0%,0%,1%,1%,0%,0%
+https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/easylist,6%,0%,27%,7%,0%,0%,1%,20%,1%,0%,100%,3%,7%,27%,5%,14%,28%,19%
+https://v.firebog.net/hosts/Prigent-Crypto.txt,0%,0%,0%,0%,0%,0%,0%,0%,0%,0%,0%,100%,0%,0%,62%,0%,0%,0%
+https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt,0%,0%,1%,0%,0%,0%,0%,0%,0%,0%,1%,0%,100%,0%,0%,0%,0%,1%
+https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt,2%,0%,1%,0%,0%,0%,0%,1%,0%,0%,0%,0%,0%,100%,0%,2%,99%,3%
+https://raw.githubusercontent.com/blocklistproject/Lists/master/crypto.txt,0%,0%,0%,0%,0%,0%,0%,0%,0%,0%,0%,7%,0%,0%,100%,0%,0%,0%
+https://adguardteam.github.io/HostlistsRegistry/assets/filter_7.txt,0%,0%,0%,7%,0%,0%,0%,0%,0%,0%,0%,0%,0%,0%,0%,100%,0%,0%
+https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt,2%,0%,1%,0%,0%,0%,0%,1%,0%,0%,0%,0%,0%,100%,0%,2%,100%,3%
+https://adaway.org/hosts.txt,10%,0%,1%,7%,0%,0%,0%,1%,0%,0%,1%,0%,1%,8%,0%,12%,9%,100%
