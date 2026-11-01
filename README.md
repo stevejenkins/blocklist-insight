@@ -1,9 +1,11 @@
 # Blocklist Insight
 Compares a list of DNS blocklists, calculates overlap, then uses the Greedy Set-Cover Solver to recommend the smallest number of lists you can use to achieve the maximum coverage of blocked hosts.
 
-I created this script to help maintain my own list of recommended Pi-hole lists [here](https://github.com/stevejenkins/pi-hole-lists).
+This Python script is loosely based on the [badmojr/crosscheck](https://github.com/badmojr/crosscheck) Bash script.
 
-## What it Looks Like
+I created this script to help maintain my own list of recommended Pi-hole "List of Lists" [here](https://github.com/stevejenkins/pi-hole-lists). The examples in this repository are not necessarily up to date with my recommended "List of Lists." [This link](https://github.com/stevejenkins/pi-hole-lists) will always contain my current blocklist recommendations.
+
+## What `insight.py` it Looks Like
 When you run `insight.py` it will generate a report that looks like this:
 
 - **Total Lists Analyzed:** 20
@@ -39,9 +41,11 @@ When you run `insight.py` it will generate a report that looks like this:
 | 10 | `https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt` | 2,736 | Covered by above selection |
 | 11 | `https://adaway.org/hosts.txt` | 7,914 | Covered by above selection |
 
-## How To Use It
+## How To Run It
 - Clone the repository
 - Ensure the `insight.py` file is executable
 - Include your blocklists in `adlists.txt`
 - Run `insight.py`
-- Profit!
+
+## How to Use the Results
+Use the results to help decide which blocklists are giving you the best coverage. Actual blocking success depends on which lists you use and what hosts your clients look up most. Pi-hole does a great job removing duplicates internally, but your `pihole -g` update process will run much faster if you're not feeding it multiple lists of duplicate hosts.
