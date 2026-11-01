@@ -1,12 +1,17 @@
-# blocklist-compare
-Compares a list of DNS blocklists, calculates overlap, and recommends the smallest number of lists for the maximum coverage
+# Blocklist Insight
+Compares a list of DNS blocklists, calculates overlap, then uses the Greedy Set-Cover Solver to recommend the smallest number of lists you can use to achieve the maximum coverage of blocked hosts.
 
-# Optimal Blocklist Minimal Set-Cover
+I created this script to help maintain my own list of recommended Pi-hole lists [here](https://github.com/stevejenkins/pi-hole-lists).
 
-- **Total Global Universe:** 3,332,279 unique domains across 20 blocklists
+## What it Looks Like
+When you run `insight.py` it will generate a report that looks like this:
+
+- **Total Lists Analyzed:** 20
+- **Total Global Universe:** 3,332,279 unique domains across all reachable lists
 - **Optimal Subset Size:** 9 lists required
 - **Target Threshold:** 99.5%
 
+## Selected Lists
 | Step | Selected Blocklist | Total Domains | New Unique Added | Redundant / Overlap | Redundancy % | Cumulative Coverage |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|
 | 1 | `https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/tif.txt` | 1,851,039 | +1,851,039 | 0 | 0.0% | **55.55%** |
@@ -16,5 +21,27 @@ Compares a list of DNS blocklists, calculates overlap, and recommends the smalle
 | 5 | `https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.plus.txt` | 225,090 | +112,416 | 112,674 | 50.1% | **96.14%** |
 | 6 | `https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts` | 79,238 | +49,503 | 29,735 | 37.5% | **97.62%** |
 | 7 | `https://big.oisd.nl` | 231,712 | +33,152 | 198,560 | 85.7% | **98.62%** |
-| 8 | `https://threatfox-api.abuse.ch/v2/files/exports/AUTHKEY/hostfile.txt` | 33,103 | +21,140 | 11,963 | 36.1% | **99.25%** |
+| 8 | `https://threatfox-api.abuse.ch/v2/files/exports/xxxxxxxx/hostfile.txt` | 33,103 | +21,140 | 11,963 | 36.1% | **99.25%** |
 | 9 | `https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt` | 14,800 | +12,666 | 2,134 | 14.4% | **99.63%** |
+
+## Redundant / Unselected Lists (Zero or Minimal Novel Contribution)
+| Index | List URL | Total Domains | Redundancy Status |
+|:---:|:---|:---:|:---|
+| 1 | `https://raw.githubusercontent.com/StevenBlack/hosts/master/extensions/fakenews/hosts` | 2,193 | Covered by above selection |
+| 2 | `https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/spam-tlds-adblock.txt` | 15 | Covered by above selection |
+| 3 | `https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/adblock/hoster.txt` | 1,076 | Covered by above selection |
+| 4 | `https://urlhaus-api.abuse.ch/v2/files/exports/xxxxxxxx/hostfile.txt` | 462 | Covered by above selection |
+| 5 | `https://adguardteam.github.io/HostlistsRegistry/assets/filter_50.txt` | 3,349 | Covered by above selection |
+| 6 | `https://v.firebog.net/hosts/Prigent-Crypto.txt` | 11,493 | Covered by above selection |
+| 7 | `https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt` | 2,701 | Covered by above selection |
+| 8 | `https://raw.githubusercontent.com/blocklistproject/Lists/master/crypto.txt` | 1,274 | Covered by above selection |
+| 9 | `https://adguardteam.github.io/HostlistsRegistry/assets/filter_7.txt` | 160 | Covered by above selection |
+| 10 | `https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt` | 2,736 | Covered by above selection |
+| 11 | `https://adaway.org/hosts.txt` | 7,914 | Covered by above selection |
+
+## How To Use It
+- Clone the repository
+- Ensure the `insight.py` file is executable
+- Include your blocklists in `adlists.txt`
+- Run `insight.py`
+- Profit!
